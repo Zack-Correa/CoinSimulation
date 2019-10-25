@@ -34,11 +34,12 @@ canvas {
 }
 
 .input-box {
-    border: 1px solid black;
+    border: 0.5px solid black;
     position: relative;
     margin: 0 auto;
     height: 90px;
     width: 350px;
+    border-radius: 6px;
 }
 
 .header {
@@ -52,4 +53,23 @@ canvas {
 .chart {
     position: relative;
     margin: 0 auto;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.div-btn {
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 1%;
 }
