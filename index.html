@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="inputdiv">
+        Número de moedas: <input id="nCoins" type="text" name="nCoins"> Número de jogadas: <input id="nRounds"
+            type="text" name="nRounds"><br>
+        <button id="btn" type="button" onclick="func(Chart)">Gerar gráfico</button>
+    </div>
+    <div id="chartDiv">
+        <canvas id="mainChart"></canvas>
+    </div>
+</body>
+<script src="./Chart.min.js"></script>
+<script src="./Coin_tossing_simulation.js"></script>
+
+</html>

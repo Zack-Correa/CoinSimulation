@@ -1,0 +1,16 @@
+div {
+    height: 30%;
+    width: 70%;
+}
+
+.inputdiv {
+    text-align: center;
+}
+
+.chartDiv {
+    align-content: center;
+}
+
+canvas {
+    align-content: center;
+}
