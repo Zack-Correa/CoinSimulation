@@ -2,17 +2,44 @@
 
 <head>
     <link rel="stylesheet" href="index.css" />
+    <title>Simulação de Lançamentos de Moedas</title>
 </head>
 
 <body>
-    <div class="inputdiv">
-        Número de moedas: <input id="nCoins" type="text" name="nCoins"> Número de jogadas: <input id="nRounds"
-            type="text" name="nRounds"><br>
-        <button id="btn" type="button" onclick="func(Chart)">Gerar gráfico</button>
+    <header>
+        <div class="header">
+            <h1 style="position: relative; line-height: 110px" class="header-title">Lançamentos de Moedas</h1>
+        </div>
+    </header>
+
+    <div style="padding-top: 2%;" class="inputdiv">
+        <div style="height: 90px">
+            <div class="input-box">
+                <p class="first-input-text">Número de moedas: </p>
+                <input style="height: 25px; line-height:55px" id="nCoins" type="text" name="nCoins"> 
+            </div>
+        </div>
+
+        <div style="height: 90px">
+            <div class="input-box">
+                <p class="second-input-text">Número de jogadas: </p>
+                <input style="height: 25px; line-height:55px" id="nRounds" type="text" name="nRounds"><br>
+            </div>
+        </div>
+
     </div>
-    <div id="chartDiv">
+    
+    <div>
+        <button class="button" id="btn" type="button" onclick="func(Chart)">Gerar gráfico</button>
+    </div>
+
+    <div style="height:600px; width:600px" class="chart" id="chartDiv">
         <canvas id="mainChart"></canvas>
     </div>
+
+    <footer>
+
+    </footer>
 </body>
 <script src="./Chart.min.js"></script>
 <script src="./Coin_tossing_simulation.js"></script>
