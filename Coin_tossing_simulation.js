@@ -2,8 +2,8 @@ function func(Chart) {
 	if (!Chart) {
 		throw new Error('The module ChartJS is required.');
 	} else {
-		var rounds = document.getElementById('nCoins').value;
-		var nCoins = document.getElementById('nRounds').value;
+		var rounds = document.getElementById('nRounds').value;
+		var nCoins = document.getElementById('nCoins').value;
 		var chance = 0.5;
 		var normalDistribution = {};
 
@@ -48,7 +48,7 @@ function func(Chart) {
 			options: {
 				title: {
 					display: true,
-					text: 'Número de moedas x Número de lançamentos'
+					text: 'Lançamentos x Número de moedas com face "cara"'
 				},
 				legend: {
 					display: false
@@ -56,6 +56,4 @@ function func(Chart) {
 			}
 		});
 	}
-	console.log(normalDistribution);
-	console.log(normalDistribution.length);
 }
